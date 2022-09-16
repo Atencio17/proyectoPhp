@@ -2,11 +2,11 @@
 
 	$numeroPosiblePrimo = 4;
 
-	funtion esPrimo($numeroPosiblePrimo) {
+	function esPrimo($numeroPosiblePrimo) {
 
-       bolean $esPrimo = true;
-
-       int $i = 2;
+        $esPrimo = true;
+		
+    	$i = 2;
 
        while ($esPrimo && $i < $numeroPosiblePrimo) {
 
