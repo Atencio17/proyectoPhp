@@ -1,0 +1,2 @@
+Elementos configurables o variables en el software
+(nombre usuario, password usuario, puerto)
