@@ -11,9 +11,9 @@ if ($controlador == "cliente") {
     require("../modelos/cliente.php");
     require("../controladores/controladorcliente.php");
     $codigo = $_POST['codigo'];
-    $nombre = $_POST['nombres'];
-    $apellido = $_POST['apellidos'];
-    $address = $_POST['direccion'];
+    $nombre = isset($_POST['nombres']) ? $_POST['nombres'] : '';
+    $apellido = isset($_POST['apellidos']) ? $_POST['apellidos'] : '';
+    $address = isset($_POST['direccion']) ? $_POST['direccion'] : '';
     $objeto = new Cliente($codigo,$nombre,$apellido,$address);
 
     $cotroladorGenerico = new ControladorCliente();
