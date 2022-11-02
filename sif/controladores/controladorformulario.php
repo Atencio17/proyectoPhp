@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 $controlador = $_POST['controlador'];
 $operacion = $_POST['operacion'];
 
@@ -15,7 +12,6 @@ if ($controlador == "cliente") {
     $apellido = isset($_POST['apellidos']) ? $_POST['apellidos'] : '';
     $address = isset($_POST['direccion']) ? $_POST['direccion'] : '';
     $objeto = new Cliente($codigo,$nombre,$apellido,$address);
-
     $cotroladorGenerico = new ControladorCliente();
     if ($operacion == "guardar") {
 
